@@ -22,19 +22,17 @@
 
     //Step 3: traverse array from right to left. And keep track of bldgs the can see sunset
     
-    for (let i = bldgArray.length - 1; i >= 2; i--) {
-        if (bldgArray[i] < bldgArray[i - 1]) {
-            result.push(bldgArray[i - 1])
-        } else {
+    for (let i = bldgArray.length - 1; i > 0; i--) {
+        if (bldgArray[i] > bldgArray[i - 1]) {
             result.push(bldgArray[i])
-        }
+        } 
     };
 
     result.push(bldgArray[0])
     result.reverse()
-
+    
 
     //Step 4: Out to the user on which buildings can sunset
     //Where result will go
-    document.getElementById("SSoutput").innerHTML = result;
+    document.getElementById("SSoutput").innerHTML = "Count: " + `${result.length}` + ", [" + `${result}` + "]"
 };
