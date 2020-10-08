@@ -11,7 +11,8 @@
     <title>Welcome to Sunset Hills!</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />    
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/Sitestyle.css" rel="stylesheet" />
     <link href="Content/prism.css" rel="stylesheet" />
 
 </head>
@@ -34,13 +35,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="/Code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="https://github.com/JaxHolliday/SunsetHills" target="_blank">GitHub</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="https://jackson-hollidays-portfolio.netlify.app/" target="_blank">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -51,14 +52,39 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>                
+                <h1 class="mt-5">Welcome to Sunset Hills!</h1>
+                <p class="lead"></p>
             </div>
         </div>
     </div>
     <hr />
 
     <!-- Sunset Hills Body -->
+    <div class="container">
+        <div class="row">
+            <div class="col"><input id="txtSunsetIn1" placeholder="Bldg Height 1"/></div>
+            <div class="col"><input id="txtSunsetIn2" placeholder="Bldg Height 2" /></div>
+            <div class="col"><input id="txtSunsetIn3" placeholder="Bldg Height 3"/></div>
+            <div class="col"><input id="txtSunsetIn4" placeholder="Bldg Height 4"/></div>
+            <div class="col"><input id="txtSunsetIn5" placeholder="Bldg Height 5" /></div>
+            <div class="col"><button class="btn btn-danger" id="btnSunset">Veiw!?</button></div>
+        </div>
+    </div>
+
+    <!-- Function Output -->
+    <div class="row">
+        <div class="col"><p id="SSoutput"</div>
+    </div>
+
+
+
+
+
+
+    <!-- Event Listener for JS -->
+    <script>
+        document.getElementById("btnSunset").addEventListener("click", sunHills)
+    </script>
 
 
 
