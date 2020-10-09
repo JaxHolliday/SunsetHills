@@ -72,6 +72,9 @@
     <Content Include="Content\prism.css" />
     <Content Include="Code.html" />
     <Content Include="Content\Sitestyle.css" />
+    <Content Include="Images\apple-touch-icon.png" />
+    <Content Include="Images\favicon-16x16.png" />
+    <Content Include="Images\favicon-32x32.png" />
     <Content Include="index.html" />
     <Content Include="Scripts\SunHills.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -96,9 +99,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

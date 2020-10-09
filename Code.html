@@ -22,7 +22,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <a class="navbar-brand" href="#">Code used in Sunset Hill's</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,15 +52,61 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap 4.5.0</li>
-                    <li>jQuery 3.5.1</li>
-                </ul>
+                <h1 class="mt-5">Code formula for my Sunset Hill's Program</h1>
             </div>
         </div>
     </div>
+    <hr />
+
+    <!-- SOAF Script  -->    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+<pre><code class="language-js line-numbers"><script>
+    //Event Listener for JS
+document.getElementById("btnSunset").addEventListener("click", sunHills);
+
+function sunHills() {
+    //Step 1: Add event listener for button click
+    //On my main index Page towards the bottom
+
+    //Step 2: Gather user input the put into an array
+    let bldgHeight1 = Number(document.getElementById("txtSunsetIn1").value);
+    let bldgHeight2 = Number(document.getElementById("txtSunsetIn2").value);
+    let bldgHeight3 = Number(document.getElementById("txtSunsetIn3").value);
+    let bldgHeight4 = Number(document.getElementById("txtSunsetIn4").value);
+    let bldgHeight5 = Number(document.getElementById("txtSunsetIn5").value);
+
+    var bldgArray = []; //initial Array
+    var result = [];  //Result array
+    bldgArray.push(bldgHeight1);
+    bldgArray.push(bldgHeight2);
+    bldgArray.push(bldgHeight3);
+    bldgArray.push(bldgHeight4);
+    bldgArray.push(bldgHeight5);
+
+    //Step 3: Traverse array from right to left. And keep track of bldgs the can see sunset
+
+    for (let i = bldgArray.length - 1; i > 0; i--) { // Length of the array; array is > 0; decrements by 1
+        if (bldgArray[i] > bldgArray[i - 1]) {       // checking current index to see if it's greater than the next
+            result.push(bldgArray[i])                // Lastly pushes to the bldg array
+        }
+    };
+
+    result.push(bldgArray[0])   // since 0 will always see sun it will be pushed 
+    result.reverse()            // reverse array to appropriate 
+
+    //Step 4: Out to the user on which buildings can sunset
+    //Where result will go
+document.getElementById("SSoutput").innerHTML = "Count: " + `${result.length}` + ", [" + `${result}` + "]"
+};</script></code></pre>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="Scripts/jquery-3.5.1.slim.min.js"></script>
