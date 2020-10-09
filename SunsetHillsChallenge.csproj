@@ -75,6 +75,7 @@
     <Content Include="Images\apple-touch-icon.png" />
     <Content Include="Images\favicon-16x16.png" />
     <Content Include="Images\favicon-32x32.png" />
+    <Content Include="Images\Welcome to.png" />
     <Content Include="index.html" />
     <Content Include="Scripts\SunHills.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
