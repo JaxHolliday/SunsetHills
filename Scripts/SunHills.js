@@ -2,7 +2,6 @@
     //Step 1: Add event listener for button click
     //On my main index Page towards the bottom
 
-
     //Step 2: Gather user input the put into an array
     let bldgHeight1 = Number(document.getElementById("txtSunsetIn1").value);
     let bldgHeight2 = Number(document.getElementById("txtSunsetIn2").value);
